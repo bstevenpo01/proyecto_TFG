@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Examen_bryan</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="n_ninos">Nº niños</string>
+    <string name="n_ninos">Nº niños</string>
+    <string name="n_adultos">Nº Adultos</string>
+    <string name="alquiler_habitaciones_hotel">ALQUILER HABITACIONES HOTEL</string>
+    <string name="todo">TODO</string>
+    <string name="n_adultos">Nº Adultos</string>
+</resources>

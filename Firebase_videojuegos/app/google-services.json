@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "911164710684",
+    "firebase_url": "https://videojuegos-a620e-default-rtdb.firebaseio.com",
+    "project_id": "videojuegos-a620e",
+    "storage_bucket": "videojuegos-a620e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911164710684:android:7073daf4493dd3b703e4d9",
+        "android_client_info": {
+          "package_name": "com.example.firebase_videojuegos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911164710684-afasbdfrn07b3vdv8g5d0d1idj5le4m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa9l6uvA8XRY7F-aFXYbfCmUqwvl7awo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911164710684-afasbdfrn07b3vdv8g5d0d1idj5le4m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
