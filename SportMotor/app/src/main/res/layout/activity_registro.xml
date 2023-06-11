@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".Registro">
+
+    <EditText
+        android:id="@+id/edt_nombre_registro"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints="no"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_apellidos_registro"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="no"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="@string/apellidos"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_nombre_registro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_nombre_registro"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nombre_registro" />
+
+    <EditText
+        android:id="@+id/edt_correo_registro"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="no"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_apellidos_registro"
+        app:layout_constraintStart_toStartOf="@+id/edt_apellidos_registro"
+        app:layout_constraintTop_toBottomOf="@+id/edt_apellidos_registro" />
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/bordes_boton"
+        android:backgroundTint="#0B00FF"
+        android:onClick="crearUsuario"
+        android:text="@string/registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_logo_registro"
+        android:layout_width="497dp"
+        android:layout_height="304dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo"
+        android:contentDescription="@string/logo" />
+
+    <EditText
+        android:id="@+id/edt_contraseña_registro"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="no"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_correo_registro"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/edt_correo_registro"
+        app:layout_constraintTop_toBottomOf="@+id/edt_correo_registro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "87188261733",
+    "project_id": "sport-motor",
+    "storage_bucket": "sport-motor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87188261733:android:e53ba6ea623fe465e72f8c",
+        "android_client_info": {
+          "package_name": "com.example.sportmotor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87188261733-qeubavlt79g8op1bptiq962ujglng89s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sportmotor",
+            "certificate_hash": "90b8c118944c25cdfe564d4049442a940b01b474"
+          }
+        },
+        {
+          "client_id": "87188261733-3dn8scm9fkqruafc4drq5ngbh62lo6vi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGp7Lwr91dRz40KUuQRuKexHhdyzvO9JI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87188261733-3dn8scm9fkqruafc4drq5ngbh62lo6vi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

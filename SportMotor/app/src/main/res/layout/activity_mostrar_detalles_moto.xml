@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondorojo"
+    tools:context=".MostrarDetallesMoto">
+
+    <ImageView
+        android:id="@+id/img_logo_detallesm"
+        android:layout_width="282dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moto"
+        android:contentDescription="@string/img_detallesm" />
+
+    <EditText
+        android:id="@+id/edt_detalles_nbastidorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/numero_bastidor"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_detalles_marcam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/marca"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_detalles_nbastidorm"
+        app:layout_constraintStart_toStartOf="@+id/edt_detalles_nbastidorm"
+        app:layout_constraintTop_toBottomOf="@+id/edt_detalles_nbastidorm" />
+
+    <EditText
+        android:id="@+id/edt_detalles_modelom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/modelo"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_detalles_marcam"
+        app:layout_constraintStart_toStartOf="@+id/edt_detalles_marcam"
+        app:layout_constraintTop_toBottomOf="@+id/edt_detalles_marcam" />
+
+    <EditText
+        android:id="@+id/edt_detalles_preciom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/precio"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_detalles_modelom"
+        app:layout_constraintStart_toStartOf="@+id/edt_detalles_modelom"
+        app:layout_constraintTop_toBottomOf="@+id/edt_detalles_modelom"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_detalles_moto"
+        android:layout_width="193dp"
+        android:layout_height="146dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/moto"
+        android:contentDescription="@string/img_detalles_motom" />
+
+    <Button
+        android:id="@+id/btn_actualizarm"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/bordes_boton"
+        android:backgroundTint="#A8000000"
+        android:onClick="actualizar_moto"
+        android:text="@string/actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_borrarm"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/bordes_boton"
+        android:backgroundTint="#A8000000"
+        android:onClick="borrar_moto"
+        android:text="@string/borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

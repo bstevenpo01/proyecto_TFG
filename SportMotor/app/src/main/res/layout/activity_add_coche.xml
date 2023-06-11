@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondorojo"
+    tools:context=".Add_coche">
+
+    <EditText
+        android:id="@+id/edt_add_nbastidor"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="192dp"
+        android:autofillHints="no"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/numero_bastidor"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_add_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints="no"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/marca"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_add_nbastidor"
+        app:layout_constraintStart_toStartOf="@+id/edt_add_nbastidor"
+        app:layout_constraintTop_toBottomOf="@+id/edt_add_nbastidor" />
+
+    <EditText
+        android:id="@+id/edt_add_modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints="no"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/modelo"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_add_marca"
+        app:layout_constraintStart_toStartOf="@+id/edt_add_marca"
+        app:layout_constraintTop_toBottomOf="@+id/edt_add_marca" />
+
+    <ImageView
+        android:id="@+id/img_add_foto"
+        android:layout_width="132dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="108dp"
+        android:contentDescription="@string/coche_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/coche" />
+
+    <EditText
+        android:id="@+id/edt_add_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints="no"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/precio"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_add_modelo"
+        app:layout_constraintStart_toStartOf="@+id/edt_add_modelo"
+        app:layout_constraintTop_toBottomOf="@+id/edt_add_modelo" />
+
+    <Button
+        android:id="@+id/btn_add_imagen"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/bordes_boton"
+        android:backgroundTint="#A8000000"
+        android:onClick="cambiar_imagen"
+        android:text="@string/subir_imagen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_add_foto" />
+
+    <Button
+        android:id="@+id/btn_añadir"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bordes_boton"
+        android:backgroundTint="#A8000000"
+        android:onClick="insertar_coche"
+        android:text="@string/a_adir_coche"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="361dp"
+        android:layout_height="215dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coche" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
