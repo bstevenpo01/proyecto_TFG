@@ -48,4 +48,6 @@
     <string name="desarrollador">Desarrollador</string>
     <string name="sport_motor">Sport Motor</string>
     <string name="url">TextView</string>
+    <string name="nosotros">NOSOTROS</string>
+    <string name="cerrar_sesion">CERRAR SESION</string>
 </resources>
