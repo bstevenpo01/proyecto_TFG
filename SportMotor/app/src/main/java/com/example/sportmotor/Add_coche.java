@@ -17,6 +17,7 @@ import com.example.sportmotor.controlador.CochesFirebaseController;
 import com.example.sportmotor.modelo.Coche;
 import com.example.sportmotor.utilidades.ImagenesFirebase;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.io.IOException;
 import java.util.List;
@@ -31,6 +32,23 @@ public class Add_coche extends AppCompatActivity {
     Coche c;
     public static final int NUEVA_IMAGEN = 1;
     Uri imagen_selecionada = null;
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            currentUser.reload();
+        }
+        else{
+            Toast.makeText(Add_coche.this, "debes autenticarte primero", Toast.LENGTH_SHORT).show();
+            FirebaseUser user = mAuth.getCurrentUser();
+            //updateUI(user);
+            Intent intent = new Intent(Add_coche.this, MainActivity.class);
+            startActivity(intent);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
